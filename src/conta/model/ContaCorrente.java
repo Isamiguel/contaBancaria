@@ -17,7 +17,6 @@ public class ContaCorrente extends Conta {
 		this.limite = limite;
 	}
 
-	@Override
 	public boolean sacar(float valor) { 
 		
 		if(this.getSaldo() + this.getLimite() < valor) {
@@ -30,7 +29,6 @@ public class ContaCorrente extends Conta {
 		
 	}
 	
-    @Override
 	public void visualizar() {
 		super.visualizar();
 		System.out.println("Limite de Crédito: " + this.limite);
